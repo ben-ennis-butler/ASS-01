@@ -1,0 +1,63 @@
+/* adjust display of header using  */
+
+header {
+    background: #5d5d5d;
+
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 0.3em;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5em 0.8em;
+}
+header nav ul li a:hover{
+    background: darkgray;
+    color: white;
+}
+
+header .inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    height: 4em;
+    align-items: center;
+}
+.inner {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.hero{
+    background: #f4f4f4;
+    min-height: 200px;
+}
+
+/* CSS grid  */
+
+.gallery{
+    display: grid;
+    grid-template-columns:50% 50%;
+    gap: 0.5em;
+}
+
+.gallery div{
+    display: flex;
+    background: red;
+    min-height: 5em;
+    justify-content: center;
+    align-items: center;
+}
+.gallery h3{
+    text-align: center;
+
+}
+
+footer {
+    background: #5d5d5d;
+
+}
