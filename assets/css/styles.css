@@ -1,5 +1,22 @@
-/* adjust display of header using  */
+/* adjust display of header */
+body{
+    font-size: 16px;
+    font-family: helvetica;
+}
+h1{
+    font-size: 3em;
 
+}
+
+h2{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-bottom: 1.2em;
+}
 header {
     background: #5d5d5d;
 
@@ -32,6 +49,22 @@ header .inner{
     margin: 0 auto;
 }
 
+.overview{
+    background: red;
+    width: 70%;
+    margin: 1em 15%;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+}
+
 .hero{
     background: #f4f4f4;
     min-height: 200px;
@@ -41,7 +74,7 @@ header .inner{
 
 .gallery{
     display: grid;
-    grid-template-columns:50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5em;
 }
 
@@ -57,7 +90,46 @@ header .inner{
 
 }
 
+.who {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:0.5em;;
+    margin-bottom:2em;
+}
+.who div{
+    display: flex;
+    background: red;
+    min-height: 5em;
+    justify-content: center;
+
+}
+.who h3{
+    min-height: 10em;
+}
+
+.patron{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:0.5em;;
+    margin-bottom:2em;
+    margin-top:1em;
+}
+.patron div{
+    display: flex;
+    background: red;
+    min-height: 5em;
+}
+
 footer {
     background: #5d5d5d;
 
+}
+
+/* media queries    
+This defines how the site changes when the screen size is changed */
+
+@media screen and (max-width: 48em) {
+    .gallery{
+        grid-template-columns: 100%;
+    }
 }
