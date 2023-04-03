@@ -12,10 +12,22 @@ h2{
     font-size: 2em;
 }
 
+h3{
+    font-size: 2em;
+}
+
+h4{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 p{
     font-size: 1em;
     line-height: 1.2em;
     margin-bottom: 1.2em;
+}
+.eventsheader h3{
+    font-weight: bold;
 }
 header {
     background: #5d5d5d;
@@ -35,6 +47,9 @@ header nav ul li a {
 header nav ul li a:hover{
     background: darkgray;
     color: white;
+}
+.currentpage a{
+    text-decoration: underline;
 }
 
 header .inner{
@@ -72,13 +87,13 @@ aside {
 
 /* CSS grid  */
 
-.gallery{
+.eventsgallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5em;
 }
 
-.gallery div{
+.eventsgallery div{
     display: flex;
     background: red;
     min-height: 5em;
@@ -107,7 +122,7 @@ aside {
     min-height: 10em;
 }
 
-.patron{
+.patron{ 
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap:0.5em;;
@@ -124,6 +139,175 @@ footer {
     background: #5d5d5d;
 
 }
+
+.footercontents{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.upcomingevents{
+    text-align: right;
+    padding-right: 1em;
+}
+.pastevents{
+    text-align: left;
+    padding-left: 1em;
+}
+.eventsheader{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.currenteventsheader a:link {
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+}
+.currenteventsheader a:visited{
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.othereventsheader a:link {
+    text-decoration: none;
+    padding: 1em;
+    color: rgb(175, 175, 175);
+}
+.othereventsheader a:visited{
+    text-decoration: none;
+    padding: 1em;
+    color: rgb(175, 175, 175);
+}
+.othereventsheader a:hover {
+    text-decoration: none;
+    padding: 1em;
+    color: black;
+}
+
+
+.eventsboxes{
+    display: grid;
+    gap: 1em;
+}
+
+.eventinfobox1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 5em;
+    gap: 1em;
+    padding-top: 2em;
+
+}
+.eventinfobox1 img{
+    max-width: 100%;
+}
+
+.booknowbutton{
+    color: black;
+    text-decoration: none;
+    padding-top: 1em;
+    max-width: 10em;
+    max-height: 5em;
+    text-align: center;
+    justify-content: Center;
+    background-color: teal;
+}
+
+
+
+.gallery {
+    display: grid;
+    /* try using different units here... */
+    /* if 4 values = 4 columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    column-gap:.5em;
+    row-gap: 1em;
+    margin: 2em 0;
+}
+/* make the boxes look nice */
+.gallery div {
+    background-color: #a88f8f;
+    min-height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+/* set a background image on one of the boxes */
+.gallery .library {
+    background-image: url(../images/library.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* removes grayscale */
+    filter:grayscale(0);
+/* position the text in the box */
+}
+.gallery .callam {
+    background-image: url(../images/callam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* removes grayscale */
+    filter:grayscale(0);
+}
+.gallery .universityhouse {
+    background-image: url(../images/university-house.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* removes grayscale */
+    filter:grayscale(0);
+/* position the text in the box */
+}
+.gallery .churchill {
+    background-image: url(../images/churchill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* removes grayscale */
+    filter:grayscale(0);
+/* position the text in the box */
+}
+.gallery .urambi {
+    background-image: url(../images/urambi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* removes grayscale */
+    filter:grayscale(0);
+/* position the text in the box */
+}
+.gallery .giralang {
+    background-image: url(../images/giralang.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* removes grayscale */
+    filter:grayscale(0);
+/* position the text in the box */
+}
+
+
+
+.gallery h3 {
+    color: #000000;
+    text-align: center;
+    /* hide the text */
+    display: none;
+}
+.gallery div:hover {
+    /* add a grayscale flter */
+    filter:grayscale(0.8);
+    opacity: 50%;
+}
+/* trying to make the image opacity 50% but not the text??? */
+.gallery div:hover h3 {
+    /* make the text visible again on hovers */
+    display: block;
+    opacity: 200%;
+}
+
+#resourcestitle{
+    padding-top: 2em;
+}
+
 
 /* media queries    
 This defines how the site changes when the screen size is changed */
