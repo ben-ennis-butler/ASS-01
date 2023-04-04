@@ -111,15 +111,29 @@ aside {
     gap:0.5em;;
     margin-bottom:2em;
 }
-.who div{
+.who div {
     display: flex;
-    background: red;
+    /* background: red; */
     min-height: 5em;
     justify-content: center;
+    padding: 1em;
 
 }
 .who h3{
     min-height: 10em;
+}
+.who div.photo {
+    background-size: cover;
+    min-height: 10em;
+}
+.edwina {
+    background-image: url(../images/callam.jpg);
+}
+.amy {
+    background-image: url(../images/callam.jpg);
+}
+.rachel {
+    background-image: url(../images/callam.jpg);
 }
 
 .patron{ 
@@ -130,9 +144,10 @@ aside {
     margin-top:1em;
 }
 .patron div{
-    display: flex;
+    /* display: flex; */
     background: red;
     min-height: 5em;
+    padding: 1em;
 }
 
 footer {
@@ -214,7 +229,19 @@ footer {
     justify-content: Center;
     background-color: teal;
 }
+.button {
+    color: black;
+    text-decoration: none;
+    padding: 1em;
 
+    text-align: center;
+    background-color: teal;
+    border-radius: 100px;
+}
+.button:hover {
+    background: red;
+    color: #ffffff;
+}
 
 
 .gallery {
@@ -225,6 +252,12 @@ footer {
     column-gap:.5em;
     row-gap: 1em;
     margin: 2em 0;
+}
+.gallery a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
 }
 /* make the boxes look nice */
 .gallery div {
@@ -294,14 +327,14 @@ footer {
 }
 .gallery div:hover {
     /* add a grayscale flter */
-    filter:grayscale(0.8);
-    opacity: 50%;
+    /* filter:grayscale(0.8); */
+    /* opacity: 50%; */
 }
 /* trying to make the image opacity 50% but not the text??? */
 .gallery div:hover h3 {
     /* make the text visible again on hovers */
     display: block;
-    opacity: 200%;
+    /* opacity: 200%; */
 }
 
 #resourcestitle{
